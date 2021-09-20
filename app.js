@@ -19,7 +19,7 @@ else if(pregunta == "no"){
     alert("Bueno, que lastima!");
 }
 else{
-    alert("No entiendo ese lenguaje >:c");
+    alert("Vuelve a intentarlo :/ (presiona F5)");
 }
 
 
