@@ -33,10 +33,51 @@ function suma(){
 }
 suma()
 Entonces, como lo uso bien para un caso asi? Del siguiente modo..
-*/
+
 //  PARAMETRO
 function suma(num1,num2){//estos dos parametros vienen de cuando llamo la funcion abajo
     console.log(num1 + num2)
 }
 //   ARGUMENTO
 suma(50,100)
+
+....
+SCOPE GLOBAL VS SCOPE LOCAL
+....
+*/
+
+/*  EJEMPLO DE VALIDACION DE DATOS
+function validar(nombre){
+    let datoTrabajo = nombre.toLowerCase()
+    if(datoTrabajo =="juan"){
+        console.log("podes entrar");
+    }else{
+        console.log("no podes entrar");
+    }
+}
+validar("juan")
+
+
+//   RETURN   mostrarNombreCompleto es la que tiene los parametros
+function mostrarNombreCompleto(nombre, apellido, edad){
+    let respuesta = `Tu nombre es ${nombre} ${apellido} y tenes ${edad}`;
+    return respuesta;
+} 
+function tomarDatos(){ //aca crea las 3 variables en entorno local y muestra
+    let nombre = prompt("nombre")
+    let apellido = prompt("apellido")
+    let edad = Number(prompt("edad"))
+    console.log( mostrarNombreCompleto(nombre, apellido, edad))
+}
+tomarDatos()
+
+FUNCTION() SE PUEDE RESUMIR AUN MAS CON LA FUNCION FLECHA
+let una Resta = (numero)=> {
+    return numero -10
+}
+console.log(unaResta(100)) 100 es el valor que yo pongo y con el return -10 me devolvera el nro que ponga restado por -10
+
+ESTO SE PUEDE SINTETIZAS AUN MAS con ARROW FUNCTION
+
+let unaResta = numero => numero -10
+*/
