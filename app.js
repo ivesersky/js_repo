@@ -77,7 +77,7 @@ let una Resta = (numero)=> {
 }
 console.log(unaResta(100)) 100 es el valor que yo pongo y con el return -10 me devolvera el nro que ponga restado por -10
 
-ESTO SE PUEDE SINTETIZAS AUN MAS con ARROW FUNCTION
+ESTO SE PUEDE SINTETIZAR AUN MAS con ARROW FUNCTION
 
 let unaResta = numero => numero -10
 */
