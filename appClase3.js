@@ -3,7 +3,7 @@
 let i = 0
 
 
-while(i<5){
+while(i<4){
     let color = prompt("Por favor, ingresa un color primario");
     
     switch (color){
@@ -24,7 +24,7 @@ while(i<5){
             i++;
             break;    
         default:
-            alert("El color ingresado no esta en mi base de datos, lo siento :(");
+            alert("El color ingresado no es un color primario");
             i++;
             break;
     }
