@@ -1,36 +1,33 @@
 //  DESAFIO 3: CREAR UN ALGORITMO UTILIZANDO UN CICLO.
 
+let i = 0
 
-let opcion = prompt("¿Quieres jugar? (si/no)")
-if(opcion =="si"){
-    let color = prompt("Por favor, ingresa un color");
+
+while(i<5){
+    let color = prompt("Por favor, ingresa un color primario");
     
     switch (color){
         case "rojo":
             alert("Su color complementario es el verde");
+            i++;
             break;
         case "azul":
             alert("Su color complementario es el naranja");
+            i++;
             break;
         case "verde":
             alert("Su color complementario es el rojo :D");
-            break;
-        case "violeta":
-            alert("Su color complementario es el amarillo");
+            i++;
             break;
         case "amarillo":
             alert("Su color complementario es el violeta");
-            break;
-        case "naranja":
-            alert("Su color complementario es el azul");
+            i++;
             break;    
         default:
-            alert("El color ingresado no existe o no esta en mi base de datos, lo siento :(");
+            alert("El color ingresado no esta en mi base de datos, lo siento :(");
+            i++;
             break;
     }
 
 }
-else{
-    alert("Que lastima :( nos vemos pronto")
 
-}
