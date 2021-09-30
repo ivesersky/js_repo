@@ -9,11 +9,11 @@ function ingresarDatos(){
     let precio = Number(prompt("Ingresar el precio del servicio: (sin puntos ni comas) " +video+" "+digital+" "+analogico));
     let porcentaje = 6;
 
-    calcular(precio,porcentaje); //esto va aca porque son variables locales. es parte del proceso de llamar la funcion resultado
+    calcular(precio,porcentaje);
 }
 
-//Sumar IVA
-function calcular( a, b){//c es operador pq esta en ese orden 
+//Operacion IVA
+function calcular( a, b){
 
     let result= a + ((a*b)/100);
     resultado(result);
