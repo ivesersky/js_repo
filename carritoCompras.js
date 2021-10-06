@@ -1,35 +1,33 @@
-let Servicio = prompt("Ingrese el servicio a comprar:");
 
-class Productos{
-    constructor(categoria){
-        this.categoria = categoria;
-        this.precio;
-        this.DescripcionServicio;
-    }
+class Producto{
+ constructor(categoria,descripcionServicio,precio){
+     this.categoria = categoria;
+     this.descripcionServicio = descripcionServicio;
+     this.precio = precio;
+ }
 
-    //metodo
-    informacionDeCompra(){
-        if(this.categoria=="video"){
-            this.precio = 15650;
-            this.DescripcionServicio = "Montaje y Posproduccion";
-            console.log(`Contataste el servicio de
-             ${this.DescripcionServicio}, le salio $ ${this.precio}`)    
-        }
-        else if(this.categoria=="digital"){
-            this.precio = 10890;
-            this.DescripcionServicio = "Retoque Digital";
-            console.log(`Contataste el servicio de
-             ${this.DescripcionServicio}, le salio $ ${this.precio}`)
-        }
-        else if(this.categoria=="analogico"){
-            this.precio = 150;
-            this.DescripcionServicio = "Sesion Analogica";
-            console.log(`Contataste el servicio de
-             ${this.DescripcionServicio}, le salio $ ${this.precio}`)
-        }
-        else{ alert("Ese no es un servicio valido")}
-    }
 }
 
-let compra = new Productos (Servicio);
-compra.informacionDeCompra();
+let listaServicios = [];
+console.log("Listado de servicios disponibles:")
+listaServicios.push(new Producto("video", "Montaje y Posproduccion", 15650))
+listaServicios.push(new Producto("digital", "Foto Producto + Retoque digital", 10890))
+listaServicios.push(new Producto("analogico", "Book 35mm", 16985))
+
+listaServicios.sort((a,b) =>{
+    if(a.categoria > b.categoria){
+        return 1
+    }
+    if(a.categoria < b.categoria){
+        return -1
+    }return 0
+})
+ 
+listaServicios.forEach(serv => {
+    console.log(serv.categoria);
+}) 
+
+let search = prompt("¿Que servicio desea buscar?")
+let buscadorMultiple = listaServicios.filter(serv => serv.categoria === search)
+console.log(buscadorMultiple);
+
