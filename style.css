@@ -1,0 +1,21 @@
+*{
+    margin: 0.5rem;
+    padding: 7px;
+    background-color:#fc8a81;
+}
+h1{
+    color:rgb(180, 210, 255);
+    font-family: 'Yeseva One', cursive;
+    font-size: 4rem;
+}
+p{
+    color: #faf7ed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+li{
+    color:rgba(238, 244, 253, 0.794);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
