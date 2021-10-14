@@ -1,8 +1,8 @@
 
 class Producto{
- constructor(servicio,descripcionServicio,precio){
+ constructor(categoria,servicio,precio){
+     this.categoria = categoria;
      this.servicio = servicio;
-     this.descripcionServicio = descripcionServicio;
      this.precio = precio;
  }
 
@@ -17,7 +17,6 @@ listaServicios.push(new Producto("foto producto", "Foto Producto + Retoque digit
 listaServicios.push(new Producto("analogico", "Sesion 35mm (sin revelado)", 4085))
 listaServicios.push(new Producto("combo analogico", "Sesion 35mm (incluye revelado x1)", 5985))
 
-
 listaServicios.sort((a,b) =>{
     if(a.servicio > b.servicio){
         return 1
@@ -31,7 +30,23 @@ listaServicios.forEach(serv => {
     console.log(serv.servicio);
 }) 
 
-let search = prompt("¿Que servicio desea buscar?")
-let buscadorMultiple = listaServicios.filter(serv => serv.servicio === search)
-console.log(buscadorMultiple);
+const guardarDatos = () => {
 
+    console.log(document.getElementById("categoria").value)
+    console.log(document.getElementById("servicio").value)
+    console.log(document.getElementById("precio").value)
+
+   return ""
+}
+
+document.getElementById("labelForm").style.color = "steelblue"
+document.getElementById("labelForm").style.fontSize = "18px"
+
+
+
+//de esta forma no me funciona :(
+/*const nuevoProducto = new Producto({
+         categoria: document.getElementById("categoria").value,
+         servicio: document.getElementById("servicio").value,
+         precio: document.getElementById("precio").value
+     }) */ 
