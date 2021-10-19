@@ -17,11 +17,15 @@ const guardarDatos = () => {
         }
     )
     document.getElementById("nueva-lista").innerHTML += `
-    <p>${producto.categoria}
-       <li class="descripcion">${producto.servicio}</li>
-       <li>$ ${producto.precio}</li>
-       <button id="btn-comprar" value="${producto.precio}">comprar</button> 
-    </p>
+    
+    <div class="card" >
+    <div class="card-body">
+    <p class="card-text">${producto.categoria}</p>
+    <h6 class="card-subtitle mb-2 text-muted">${producto.servicio}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">$ ${producto.precio}</h6>
+    <button id="ide">Comprar</button>
+    </div>
+    </div>
    `
    return producto
  }

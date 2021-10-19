@@ -32,3 +32,20 @@ li{
     font-weight: bold;
     font-size: 16px;
 }
+
+.card{
+    background-color: rgba(224, 141, 57, 0.555);
+    border-radius: 4px;
+}
+h1{
+    color:#cc7135;
+    font-family: 'Yeseva One', cursive;
+    font-size: 6rem;
+}
+
+p{
+    color: #051e63;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
