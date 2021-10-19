@@ -2,8 +2,21 @@
     margin: 0.5rem;
     padding: 4px;
 }
+
 body{
     background-color: #eee7da;
+}
+a{
+ color:rgb(78, 29, 0);
+ font-family: 'Raleway', sans-serif;
+ text-decoration: none;
+}
+a:hover{
+color:rgb(130, 145, 231);
+}
+a.active{
+color:rgb(130, 145, 231);
+
 }
 
 div{
