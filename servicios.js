@@ -31,6 +31,5 @@ document.getElementById("vid").innerHTML += `
       `
 
 
-/* <li class="descripcion">Producción de pieza audiovisual</li>
-            <li class="descripcion">Montaje y Posproducción</li> */
+
 
