@@ -1,14 +1,6 @@
 
 
-class Producto{
-    constructor(categoria,servicio,precio){
-        this.categoria = categoria;
-        this.servicio = servicio;
-        this.precio = precio;
-    }
-   
-   }
-   
+
 //LISTA SERVICIOS HTML
  
 const analogic1 = document.createElement("li")
