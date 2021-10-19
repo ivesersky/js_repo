@@ -3,7 +3,7 @@
     padding: 5px;
 }
 body{
-    background-color: #eee7da;
+    background-color: #f3eee3;
 }
 
 div{
@@ -14,6 +14,7 @@ h1{
     font-family: 'Yeseva One', cursive;
     font-size: 6rem;
 }
+
 p{
     color: #051e63;
     font-family: 'Raleway', sans-serif;
@@ -29,4 +30,23 @@ li{
 #labelForm{
  color: rgb(114, 57, 40);
  font-family:'Raleway', sans-serif;
+}
+.card{
+    max-width: 20rem;
+    background-color: rgba(240, 211, 185, 0.466);
+}
+.card-text{
+    font-size: 14px;
+    word-wrap: break-word;
+}
+.card-body{
+     margin: 0px;
+     padding: 2px;
+    
+}
+.card-link{
+    font-size: 14px;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgba(0, 62, 177, 0.342);
+    border-radius: 8px;
 }
