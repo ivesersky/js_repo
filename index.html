@@ -14,26 +14,30 @@
 
 <body>
     <div>
-        <h1>Servicios Audiovisuales</h1>
+        <h1 id="titulo-serv">Servicios Audiovisuales</h1>
     </div>
-    <ul>
-        <p>Analógico </p>
-        <li>Analógico: sesión 35mm (no incluye revelado)</li> 
-        <li>Combo Analógico: sesión 35mm (incluye revelado x1 rollo de 36exp)</li> 
-        <p>Digital </p>
-        <li>Flyers promocionales</li>
-        <li>Foto Producto + Retoque digital.</li>
-        <p>Video </p>
-        <li>Producción de pieza audiovisual</li>
-        <li>Montaje y Posproducción</li> 
-    </ul>
+    <div id="listadoServicios">
+        <p id="analogic">Analógico             
+        </p>
+         <p id="digital">Digital
+             
+         </p>
+        <p id="vid">Video
+            <li class="descripcion">Producción de pieza audiovisual</li>
+            <li class="descripcion">Montaje y Posproducción</li>    
+        </p>
+            
+    </div> 
+    
 
     <form action="" id="labelForm">
         <label >Categoria:</label> <input type="text" id="categoria">
         <label>Servicio:</label> <input type="text" id="servicio">
         <label>Precio:</label> <input type="text" id="precio">
+        <button id="btn-enviar">Enviar</button>
     </form>
 
     <script src="./carritoCompras.js"></script>
+    <script src="./backoffice.js"></script>
 </body>
 </html>
