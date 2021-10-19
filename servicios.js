@@ -1,8 +1,8 @@
 
 
 
-//LISTA SERVICIOS HTML
- 
+//LISTA SERVICIOS HTML. Experimentando 2 metodos distintos
+//x createElement
 const analogic1 = document.createElement("li")
 analogic1.setAttribute("class","descripcion")
 analogic1.textContent = "Combo Analógico: sesión 35mm (incluye revelado x1 rollo de 36exp)"
@@ -23,7 +23,12 @@ digital2.setAttribute("class","descripcion")
 digital2.textContent = "Foto Producto + Retoque digital."
 document.getElementById("digital").appendChild(digital2)
 
-
+//inyectando HTML 
+document.getElementById("vid").innerHTML += `
+       
+          <li class="descripcion">Producción de pieza audiovisual</li>
+          <li class="descripcion">Montaje y Posproducción </li>      
+      `
 
 
 /* <li class="descripcion">Producción de pieza audiovisual</li>

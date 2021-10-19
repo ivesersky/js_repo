@@ -16,17 +16,20 @@ class Producto{
                precio : document.getElementById("precio").value
            }
        )
+
+       document.getElementById("aca").innerHTML += `
+       <p>${producto.categoria}
+          <li class="descripcion">${producto.servicio}</li>
+          <li>$ ${producto.precio}</li>
+          <button id="btn-comprar" value="${producto.precio}">comprar</button> 
+       </p>
+      `
+
        return producto
        
     }
     
     
-
-
-
-
-
-
-
-    document.getElementById("btn-enviar").style.color ="orange"
-    document.getElementById("btn-enviar").textContent ="Comprar"
+//En desafio 9 agrego el boton de enviar con funcionalidad. Por ahora con DOM lo mantengo oculto.
+let boton = document.getElementById("btn-enviar");
+boton.parentNode.removeChild(boton);
