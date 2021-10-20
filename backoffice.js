@@ -8,7 +8,7 @@ class Producto{
    }
    
    
-const guardarDatos = () => {
+const imprimirDatos = () => {
     const producto = new Producto(
         {
             categoria : document.getElementById("categoria").value,
@@ -32,6 +32,12 @@ const guardarDatos = () => {
        
     
     
-document.getElementById("btn-enviar").addEventListener("click", () => {
-    guardarDatos()
+document.getElementById("btn-enviar").addEventListener("click", (e) => {
+    e.preventDefault()
+
+    imprimirDatos()
 })
+
+
+
+
