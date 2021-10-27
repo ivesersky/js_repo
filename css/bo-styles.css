@@ -1,28 +1,30 @@
-*{
-    margin: 0.5rem;
-    padding: 4px;
-}
 
 body{
     background-color: #eee7da;
 }
-
-a{
- color:rgb(78, 29, 0);
- font-family: 'Raleway', sans-serif;
- text-decoration: none;
+.formBo{
+    max-width: 3rem;
+    color: rgb(114, 57, 40);
+    font-family:'Raleway', sans-serif;
+    margin-left: 2rem;
+    padding: 1rem;
+    
 }
-a:hover{
-color:rgb(130, 145, 231);
+label{
+    padding:10px 0px;
 }
-a.active{
-color:rgb(130, 145, 231);
+input{
+    border-color: floralwhite;
+    border-radius: 4px;
 }
 
 #btn-enviar{
     border-radius: 4px;
-    padding: 5px;
-    margin: 10px;
+    padding: 5px ;
+    margin: 10px 0px;
+    background-color: #062fa177;
+    color:floralwhite;
+    border-color: floralwhite;
 }
 
 li{
@@ -32,15 +34,17 @@ li{
     font-weight: bold;
     font-size: 16px;
 }
-
+#nueva-lista{
+    max-width: 80vw;
+    margin-left: 2.5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
 .card{
     background-color: rgba(224, 141, 57, 0.555);
     border-radius: 4px;
-}
-h1{
-    color:#cc7135;
-    font-family: 'Yeseva One', cursive;
-    font-size: 6rem;
+    width: 200px;
+    margin: 10px;
 }
 
 p{
