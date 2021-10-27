@@ -104,7 +104,7 @@ const remove_localstorage = (element) =>{
 
 
 $(".btnComprar.addToCart").click((e)=>{
-    alert("Estas por comprar el servicio:" + " " + e.target.id);
+    alert("Estas por comprar el servicio n°" + " " + e.target.id);
 });
 
 
