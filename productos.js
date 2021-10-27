@@ -102,9 +102,10 @@ const remove_localstorage = (element) =>{
 
 //JQUERY
 
-console.log($("button.btnComprar.addToCart"));
 
-
+$(".btnComprar.addToCart").click((e)=>{
+    alert("Estas por comprar el servicio:" + " " + e.target.id);
+});
 
 
 
