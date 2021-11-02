@@ -3,11 +3,12 @@ const carritoPrint = document.querySelector("#carrito")
 let i;
 
 class Producto{
-    constructor(id,servicio,descripcionServicio,precio){
+    constructor(id,servicio,descripcionServicio,precio, img){
         this.id = id;
         this.servicio = servicio;
         this.descripcionServicio = descripcionServicio;
         this.precio = precio;
+        this.img = img;
     }
    
    }
@@ -15,7 +16,7 @@ class Producto{
    let itemServicio = [];
    
    
-   itemServicio.push(new Producto( 1,"Produccion de pieza audiovisual","Produccion", 15450))
+   itemServicio.push(new Producto( 1,"Produccion de pieza audiovisual","Produccion", 15450,  "./img/produccion.gif"))
    itemServicio.push(new Producto( 2, "Montaje y Posproduccion","Montaje", 8500))
    itemServicio.push(new Producto( 3, "Flyers promocionales","Flyers", 3750))
    itemServicio.push(new Producto( 4, "Foto Producto + Retoque digital","Foto producto", 9890))
@@ -30,10 +31,13 @@ listadoContainer.innerHTML += `
     
 <div class="card carritoCard" >
 <div class="card-body">
+<img class="imgProd" src="./img/${i}transp.png" alt="">
 <h5 class="card-text card-title">${itemServicio[i].descripcionServicio}</h5>
 <h7 class="card-subtitle mb-2 text-muted">${itemServicio[i].servicio}</h7>
 <h6 class="card-subtitle mb-2 text-precio">$ ${itemServicio[i].precio}</h6>
 <button id="${i}" class="btnComprar addToCart" onclick="guardarId(${i})"><i class="fas fa-cart-plus"></i> AGREGAR </button>
+<button id="btn-ocultar" class="btnOcultar btnComprar">VER +/-</button>
+
 </div>
 </div>
 `
@@ -50,10 +54,12 @@ console.log(carritoDeCompra);
 
 carritoPrint.innerHTML += `
  
-<div class="card carritoCard" id="${carritoDeCompra[carritoDeCompra.length-1].id}">
-<p class="card-text">${carritoDeCompra[carritoDeCompra.length-1].descripcionServicio}</p>
-<h6 class="card-subtitle mb-2 text-muted">$  ${carritoDeCompra[carritoDeCompra.length-1].precio}</h6>
+<div class="card carritoCard agregado">
+<div class="card-body "  id="${carritoDeCompra[carritoDeCompra.length-1].id}">
+<h6 class="card-text card-title">${carritoDeCompra[carritoDeCompra.length-1].descripcionServicio}</h6>
+<h7 class="card-subtitle mb-2 text-muted">$  ${carritoDeCompra[carritoDeCompra.length-1].precio}</h7>
 <button id="${i}" class="btnComprar btn-delete" name="remove" ><i class="fas fa-trash-alt"></i> QUITAR</button>
+</div>
 </div>
 `;
 
