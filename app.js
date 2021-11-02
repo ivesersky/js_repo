@@ -36,7 +36,7 @@
 
 // //TOGGLE. MUESTRA-OCULTA DESLIZANDO PARA ARRIBA-ABAJO
 
- $("#btn-ocultar").on("click", ()=>{
+ $(".btn-ocultar").on("click", ()=>{
      $(".imgProd").slideToggle(1500);
      $(".card-subtitle.text-muted").slideToggle(1500);
 

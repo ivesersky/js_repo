@@ -36,7 +36,7 @@ listadoContainer.innerHTML += `
 <h7 class="card-subtitle mb-2 text-muted">${itemServicio[i].servicio}</h7>
 <h6 class="card-subtitle mb-2 text-precio">$ ${itemServicio[i].precio}</h6>
 <button id="${i}" class="btnComprar addToCart" onclick="guardarId(${i})"><i class="fas fa-cart-plus"></i> AGREGAR </button>
-<button id="btn-ocultar" class="btnOcultar btnComprar">VER +/-</button>
+<button id="${i}" class="btn-ocultar btnComprar">VER +/-</button>
 
 </div>
 </div>
@@ -57,7 +57,7 @@ carritoPrint.innerHTML += `
 <div class="card carritoCard agregado">
 <div class="card-body "  id="${carritoDeCompra[carritoDeCompra.length-1].id}">
 <h6 class="card-text card-title">${carritoDeCompra[carritoDeCompra.length-1].descripcionServicio}</h6>
-<h7 class="card-subtitle mb-2 text-muted">$  ${carritoDeCompra[carritoDeCompra.length-1].precio}</h7>
+<h7 class="card-subtitle mb-2 text-precio">$  ${carritoDeCompra[carritoDeCompra.length-1].precio}</h7>
 <button id="${i}" class="btnComprar btn-delete" name="remove" ><i class="fas fa-trash-alt"></i> QUITAR</button>
 </div>
 </div>

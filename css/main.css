@@ -356,7 +356,6 @@ li {
     }
     .inicio {
         height: 100vh;
-        grid-template-rows: 1fr 0.5fr 60px 1fr;
     }
     .inicio .inicio__titulo h1 {
         font-size: 9rem !important;
@@ -368,19 +367,21 @@ li {
     }
     .inicio .inicio__container {
         margin: 0px;
-        width: 88vw;
-        height: 30vh;
+        width: 80vw;
+        height: 25vh;
         grid-template-columns: repeat(4, 1fr);
         -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-gap: 30px;
-        -webkit-box-align: left;
-        -ms-flex-align: left;
-        align-items: left;
+        grid-gap: 20px;
+        align-items: flex-start;
     }
     .inicio .inicio__container img {
-        width: 100%;
+        width: 95%;
         border-radius: 10%;
+    }
+
+    .card-body img {
+        width: 90px !important;
     }
     .grilla-perfil {
         width: 100vw;
@@ -447,8 +448,8 @@ body::-webkit-scrollbar {
     margin-bottom: 20px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 0.5fr 60px 2fr;
-    grid-template-rows: 1fr 0.5fr 60px 2fr;
+    -ms-grid-rows: 1fr 0.5fr 2fr 60px;
+    grid-template-rows: 1fr 0.5fr 2fr 60px;
     width: 99vw;
     grid-row-gap: 10px;
     -webkit-box-align: center;
@@ -468,7 +469,7 @@ body::-webkit-scrollbar {
     display: none;
     display: -ms-grid;
     display: grid;
-    margin: 0px 10px 50px;
+    margin: 10px 10px 20px 50px;
     justify-content: center;
     align-items: center;
     width: 80vw;
@@ -506,7 +507,7 @@ body::-webkit-scrollbar {
 }
 
 #vacio {
-    height: 50px;
+    height: 30vh;
 }
 #gridServicios {
     display: grid;
@@ -515,7 +516,7 @@ body::-webkit-scrollbar {
     margin: 20px 10px;
 }
 .card-body img {
-    width: 20%;
+    width: 50px;
     margin: 0px;
 }
 .tituloServ {
